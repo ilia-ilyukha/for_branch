@@ -43,6 +43,7 @@ class TaskController extends Controller
     }
 
     public function myTasks(TaskFilter $filter){
+        echo "Hello!"; die;
         $filters = [
             ['tasks.assignee', '=', Auth::user()->id],
         ];
